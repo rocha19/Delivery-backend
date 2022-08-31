@@ -2,5 +2,11 @@
   "name": "backend-de-entregas",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1"
+  }
 }
