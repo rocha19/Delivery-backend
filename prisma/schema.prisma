@@ -9,10 +9,18 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
-model DeliverMan {
+model Deliverman {
   id String @id @default(uuid())
   username String @unique
   password String
 
   @@map("deliveryman")
+}
+
+model Client {
+  id String @id @default(uuid())
+  username String @unique
+  password String
+
+  @@map("client")
 }
